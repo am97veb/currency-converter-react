@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const useCurrentDate = () => {
-
     const [date, setDate] = useState(new Date());
 
     useEffect(() => {
