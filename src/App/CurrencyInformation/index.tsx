@@ -1,8 +1,14 @@
+import useCurrencyDownload from "../Form/useCurrencyDownload";
+import { DataState } from "../types";
 import { StyledInformation, SideInformation } from "./styled";
 
-const CurrencyInformation = ({ dataState }) => {
-
-    const currencyDate = Object.values(dataState.currencyData.meta);
+const CurrencyInformation = () => {
+    const dataState: DataState = useCurrencyDownload();
+     
+    if(dataState.status !== "success") {
+      return;
+    }
+    const currencyDate = Object.values(dataState.currencyData.meta)[0];
     const newDate = new Date(currencyDate);
 
     return (
