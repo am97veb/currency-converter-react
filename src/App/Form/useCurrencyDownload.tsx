@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { fetchApiData } from "./fetchApiData";
 import { source } from "./source"; 
+import { DataState } from "../types";
 
 const useCurrencyDownload = () => {
-    const [dataState, setDataState] = useState({status: "loading", currencyData: null});
+    const [dataState, setDataState] = useState<DataState>({status: "loading", currencyData: null});
 
     useEffect(() => {
         setTimeout(() => {
