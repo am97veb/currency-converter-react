@@ -1,6 +1,6 @@
 import { FormEventHandler } from "react";
 import { StyledForm, FormFieldset, FormLegend } from "./styled";
-import { FormProps } from "../types";
+import { FormProps } from "./types";
 
 const Form = ({ clock, dataState, loadingMessage, errorMessage, converter }: FormProps) => {
   const onFormSubmit: FormEventHandler<HTMLFormElement> = (event) => {

@@ -1,4 +1,4 @@
-import { CurrencyInformationProps } from "../types";
+import { CurrencyInformationProps } from "./types";
 import { StyledInformation, SideInformation } from "./styled";
 
 const CurrencyInformation = ({dataState}: CurrencyInformationProps) => {

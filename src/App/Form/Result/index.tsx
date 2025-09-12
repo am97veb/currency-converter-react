@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ResultProps } from "../../types";
+import { ResultProps } from "./types";
 import { Button, ResultText } from "./styled";
 
 const Result = ({amountValue, result, currencyName, calculation, resultReset}: ResultProps) => {

@@ -1,4 +1,4 @@
-import { ConverterProps } from "../types";
+import { ConverterProps } from "./types";
 import { FormField, LabelText } from "./styled";
 
 export const Converter = ({ currencyName, setCurrency, dataState, amountValue, setAmount, resultComponent, currencyInformation }: ConverterProps) => {
