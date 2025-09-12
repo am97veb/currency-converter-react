@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-image: url("${CCwallpaper}");
+    background-image: url(${CCwallpaper});
     background-size: cover;
     font-family: "Raleway", sans-serif;
     font-weight: bold;

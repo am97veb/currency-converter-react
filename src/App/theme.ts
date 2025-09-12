@@ -8,4 +8,4 @@ export const theme = {
         mercury: "#EAE9E9",
         wildSand: "#F5F5F5"
     },
-}
+} as const;
