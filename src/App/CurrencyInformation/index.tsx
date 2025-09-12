@@ -1,12 +1,10 @@
-import useCurrencyDownload from "../Form/useCurrencyDownload";
-import { DataState } from "../types";
+import { CurrencyInformationProps } from "../types";
 import { StyledInformation, SideInformation } from "./styled";
 
-const CurrencyInformation = () => {
-    const dataState: DataState = useCurrencyDownload();
+const CurrencyInformation = ({dataState}: CurrencyInformationProps) => {
      
-    if(dataState.status !== "success") {
-      return;
+    if (dataState.status !== "success") {
+      return null;
     }
     const currencyDate = Object.values(dataState.currencyData.meta)[0];
     const newDate = new Date(currencyDate);
